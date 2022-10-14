@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <h1>
+            ini head
+        </h1>
+        <h2>ini head 2</h2>
+    </head>
+
+    <body>
+        <u>
+            ini isi
+        </u>
+        <ul>
+            ini juga isi
+        </ul>
+        
+    </body>
+
+
+
+</html>
