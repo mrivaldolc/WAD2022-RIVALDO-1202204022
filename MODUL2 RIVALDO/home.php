@@ -17,7 +17,7 @@ $datacar = [
         "price" => 500000,
         "img" => "image/crv.jpg"
     ],
-]
+];
 
 ?>
 
@@ -64,7 +64,7 @@ $datacar = [
         <div class="d-flex justify-content-around">
             <div class="col-3 m-1">
                 <div class="card shadow-sm rounded">
-                    <img src="<?php echo $datacar[0]["car"]; ?>" alt="">
+                    <img src="<?php echo $datacar[0]["img"]; ?>" alt="">
                     <div class="m-3">
                         <p class="m-0" style="font-size: 20px"><?php echo $datacar[0]["car"]; ?></p>
                         <p class="m-0" style="color: grey">Rp.<?php echo $datacar[0]["price"]; ?> / Day</p>
@@ -83,7 +83,7 @@ $datacar = [
             </div>
             <div class="col-3 m-1 ms-2 me-2">
                 <div class="card shadow-sm rounded">
-                    <img src="<?php echo $datacar[1]["car"]; ?>" alt="">
+                    <img src="<?php echo $datacar[1]["img"]; ?>" alt="">
                     <div class="m-3">
                         <p class="m-0" style="font-size: 20px"><?php echo $datacar[1]["car"]; ?></p>
                         <p class="m-0" style="color: grey">Rp.<?php echo $datacar[1]["price"]; ?> / Day</p>
@@ -102,7 +102,7 @@ $datacar = [
             </div>
             <div class="col-3 m-1">
                 <div class="card shadow-sm rounded">
-                    <img src="<?php echo $datacar[2]["car"]; ?>" alt="">
+                    <img src="<?php echo $datacar[2]["img"]; ?>" alt="">
                     <div class="m-3">
                         <p class="m-0" style="font-size: 20px"><?php echo $datacar[2]["car"]; ?></p>
                         <p class="m-0" style="color: grey">Rp.<?php echo $datacar[2]["price"]; ?> / Day</p>

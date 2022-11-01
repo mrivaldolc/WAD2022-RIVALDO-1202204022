@@ -22,7 +22,7 @@ $nama = $_POST["nama"];
 // tanggal waktu
 $event = $_POST["event"] . " " . $_POST["time"];
 $starev = date("d-m-Y H:i", strtotime($event));
-$endev = date("d-m-Y H:i", strtotime($event) + 60 * 60 * 24 * $_GET["jam"]);
+$endev = date("d-m-Y H:i", strtotime($event) + 60 * 60 * 24 * $_POST["jam"]);
 $cartype = $_POST["cartype"];
 $pone = $_POST["pone"];
 // fitur tambahan 
