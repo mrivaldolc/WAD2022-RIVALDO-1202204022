@@ -34,8 +34,8 @@ function onClick($result)
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-2">
           <a class="navbar-brand">
-        <img src="https://i.ibb.co/QfDK8Nj/logo-ead.png" width="140" height="35" alt="">
-      </a>
+            <img src="https://i.ibb.co/QfDK8Nj/logo-ead.png" width="140" height="35" alt="">
+          </a>
           <a class="nav-link" style="color: white;" href="#home">Home</a>
           <a class="nav-link" href="<?php if (mysqli_num_rows($result) > 0) {
                                       echo "./pages/ListCar-Rivaldo.php";
@@ -68,14 +68,14 @@ function onClick($result)
   </section>
   <!-- Jumbotron End -->
 
-    <!-- footer -->
-    <footer class="text-center pt-3 bg-light mt-5">
-        <p style="text-align: center; color: lightslategray;">
-        <img src="<?php echo "asset/images/logo-ead.png" ?>" alt="logoead" style="width:120px;">
-            <p style="margin-top: 20px; font-size:10px;">Rivaldo_1202204044</p>
-        </p>
-    </footer>
-    <!-- end footer -->
+  <!-- footer -->
+  <footer class="text-center pt-3 bg-light mt-5">
+    <p style="text-align: center; color: lightslategray;">
+      <img src="<?php echo "asset/images/logo-ead.png" ?>" alt="logoead" style="width:120px;">
+    <p style="margin-top: 20px; font-size:10px;">Rivaldo_1202204044</p>
+    </p>
+  </footer>
+  <!-- end footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

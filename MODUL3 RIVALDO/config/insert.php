@@ -15,7 +15,7 @@ $target = "../asset/images/";
 if (move_uploaded_file($_FILES['gambar']['tmp_name'], $target . $gambar)) {
   $sql = "INSERT INTO showroom_nama_table (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES ('$namamobil', '$pemilik', '$merk', '$tanggalbeli', '$desc', '$gambar', '$status')";
   if (mysqli_query($koneksi, $sql)) {
-    header("location: ../pages/ListCar-Rivaldo.php");
+    ("location: ../pages/ListCar-Rivaldo.php");
     echo "
     <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
       <div class='toast-header'>

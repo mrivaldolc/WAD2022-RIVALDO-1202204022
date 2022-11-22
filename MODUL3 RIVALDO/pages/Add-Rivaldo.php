@@ -18,8 +18,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-3">
           <a class="navbar-brand">
-        <img src="https://i.ibb.co/QfDK8Nj/logo-ead.png" width="140" height="35" alt="">
-      </a>
+            <img src="https://i.ibb.co/QfDK8Nj/logo-ead.png" width="140" height="35" alt="">
+          </a>
           <a class="nav-link" href="../index.php">Home</a>
           <a class="nav-link" style="color: white;" href="#">MyCar</a>
         </div>
@@ -59,12 +59,12 @@
   </section>
   <!-- Form End -->
 
-   <!-- footer -->
-    <footer class="text-center pt-3 bg-light mt-5">
-            <p style="margin-top: 20px; font-size:10px;">Rivaldo_1202204044</p>
-        </p>
-    </footer>
-    <!-- end footer -->
+  <!-- footer -->
+  <footer class="text-center pt-3 bg-light mt-5">
+    <p style="margin-top: 20px; font-size:10px;">Rivaldo_1202204044</p>
+    </p>
+  </footer>
+  <!-- end footer -->
 
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
