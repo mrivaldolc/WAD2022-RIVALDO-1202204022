@@ -12,7 +12,7 @@ $nama = $_POST['nama'];
 $nomor = $_POST['nomor'];
 $password = $_POST['password'];
  
-$update = mysqli_query($conn, "UPDATE users SET nama='$nama', no_hp='$nomor', password='$password' WHERE id='$id'");
+$update = mysqli_query($conn, "UPDATE user_rivaldo SET nama='$nama', no_hp='$nomor', password='$password' WHERE id='$id'");
 
 
 if ($conn==1) {
