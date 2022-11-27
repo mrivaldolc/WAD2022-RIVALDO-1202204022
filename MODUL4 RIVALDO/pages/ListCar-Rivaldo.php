@@ -33,6 +33,18 @@ $result = mysqli_query($koneksi, $query);
         <a href="Add-Rivaldo.php" style="background-color: black; color:white; border-radius: 5px; text-decoration: none; width: 110px; height: 35px; display:flex; justify-content:center; align-items:center; font-weight:500;">Add Car</a>
       </div>
     </div>
+    <div>     
+    <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Pilihan Menu
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../login/profile.php">Profile</a></li>
+        <li><a class="dropdown-item" href="../login/logout.php">Logout</a></li>
+    </ul>
+    </div>
+                </div>
   </nav>
   <!-- Nav End -->
 
