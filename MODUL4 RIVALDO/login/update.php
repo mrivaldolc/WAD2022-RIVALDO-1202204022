@@ -9,10 +9,10 @@ $row = mysqli_fetch_array($profile);
 
 $id = $row['id'];
 $nama = $_POST['nama'];
-$nomor = $_POST['nomor'];
+$no_hp = $_POST['no_hp'];
 $password = $_POST['password'];
  
-$update = mysqli_query($conn, "UPDATE users SET nama='$nama', no_hp='$nomor', password='$password' WHERE id='$id'");
+$update = mysqli_query($conn, "UPDATE user_rivaldo SET nama='$nama', no_hp='$no_hp', password='$password' WHERE id='$id'");
 
 
 if ($conn==1) {

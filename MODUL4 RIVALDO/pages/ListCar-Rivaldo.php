@@ -1,8 +1,16 @@
 <?php
 require '../config/koneksi.php';
 
-$query = " SELECT * FROM showroom_rivaldo_table";
+session_start();
+
+$query = " SELECT * FROM showroom_nama_table";
 $result = mysqli_query($koneksi, $query);
+
+$query1 = "SELECT * FROM user_rivaldo";
+$result1 = mysqli_query($koneksi, $query1);
+
+$data = mysqli_fetch_array($result1);
+
 ?>
 
 <!doctype html>
@@ -36,12 +44,12 @@ $result = mysqli_query($koneksi, $query);
     <div>     
     <div class="dropdown">
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Pilihan Menu
+    <?php echo $_SESSION['nama']; ?>
     </a>
 
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="../login/profile.php">Profile</a></li>
-        <li><a class="dropdown-item" href="../login/logout.php">Logout</a></li>
+        <li><a class="dropdown-item" href="/../login/logout.php">Logout</a></li>
     </ul>
     </div>
                 </div>

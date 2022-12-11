@@ -3,7 +3,7 @@ require '../config/koneksi.php';
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM showroom_rivaldo_table WHERE id_mobil = $id";                                                                                         
+$sql = "SELECT * FROM showroom_nama_table WHERE id_mobil = $id";                                                                                         
 
 $result = mysqli_query($koneksi, $sql);
 ?>

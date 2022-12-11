@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+require '../config/koneksi.php';
+
+$query = " SELECT * FROM showroom_nama_table";
+$result = mysqli_query($koneksi, $query);
+
+$query1 = "SELECT * FROM user_rivaldo";
+$result1 = mysqli_query($koneksi, $query1);
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -24,6 +37,18 @@
           <a class="nav-link" style="color: white;" href="#">MyCar</a>
         </div>
       </div>
+      <div>     
+    <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <?php echo $_SESSION['nama']; ?>
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../login/profile.php">Profile</a></li>
+        <li><a class="dropdown-item" href="../login/logout.php">Logout</a></li>
+    </ul>
+    </div>
+                </div>
     </div>
   </nav>
   <!-- Nav End -->

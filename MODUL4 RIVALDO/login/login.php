@@ -1,7 +1,31 @@
 <?php
 session_start();
-?>
 
+
+if (isset($_POST['login'])) {
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+ 
+    $sql = mysqli_query($conn, "SELECT * FROM user_rivaldo WHERE email = '$email' AND password = '$password'");
+    $cek = mysqli_num_rows($sql);
+
+    if ($cek==1) {
+      $_SESSION['status']="newlogin";
+      $_SESSION['nama']=$cek['nama'];
+
+      header("location:index.php");
+      
+    }
+    else {
+      ?>
+        <div class="alert alert-danger mt-5">
+          Gagal login
+        </div>
+      <?php
+    }
+}
+?>
 
 <!doctype html>
 <html lang="en">
@@ -23,7 +47,9 @@ session_start();
                 <a class="link-dark" href="../index.php" style="text-decoration: none;"><b>Home</b></a>
                     <div class="dropdown">
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Pilihan Menu
+    
+
+    
     </a>
 
     <ul class="dropdown-menu">
@@ -129,7 +155,9 @@ if (isset($_POST["submit"])){
     $row = mysqli_fetch_assoc($getakun);
     if ( $pass == $row["password"]){
         $_SESSION["newlogin"] = true;
+        $_SESSION["nama"] = $row['nama'];
         if (isset($_POST["remember"])){
+            setcookie('nama', $row["nama"], strtotime('+7 days'), '/');
             setcookie('id', $row["id"], strtotime('+7 days'), '/');
             echo "<script> location.href='../index.php'; </script>";
         }else{

@@ -2,16 +2,17 @@
 include "../config/koneksi.php";
 
 $conn = mysqli_connect("localhost", "root", "", "wad_modul4_rivaldo");
-$profile = mysqli_query($conn, "SELECT * FROM user_rivaldo");
+$profile = mysqli_query($conn, "SELECT * FROM user_rivaldo ");
 
 $row = mysqli_fetch_array($profile);
 
 session_start();
 
-if($_SESSION['status']="sudah_update"){
+if($_SESSION['status']="newlogin"){
+  $nama = $_POST['nama'];
+
   ?>
-  <div class="alert alert-success mt-5">
-      Berhasil update
+      
   </div> 
   <?php
 }
@@ -19,6 +20,7 @@ if($_SESSION['status']="sudah_update"){
 else{
   header("location:profile.php");
 }
+
 
 ?>
 
@@ -73,7 +75,7 @@ else{
 
 </head>
 <body>
-    <nav style="background-color: #0099FF" class="navbar navbar-expand-lg fixed-top">
+    <nav style="background-color: #A9A9A9" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a style="color: black; font-weight: bold; margin-left: 200px" class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +85,10 @@ else{
         <img style='margin-left:1300px' width='20px'>
         
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='text-decoration:none; color:black;'>
-          Pilihan Menu
+         
+        <?php
+           echo $_SESSION["nama"] ;
+          ?>
         </a>
         <div style='margin-left: 1300px; margin-top:140px' class="dropdown-menu" aria-labelledby="navbarDropdown" id='navbarDropdown'>
           <a class="dropdown-item" href="#">Profile</a>
