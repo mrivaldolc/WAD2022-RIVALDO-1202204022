@@ -10,7 +10,7 @@
                 <div class="form-login m-auto ps-5">
                     <h2 class="fw-bold mb-4">Login</h2>
                     <form action="{{ route('login.post') }}" method="POST">
-
+                        @csrf
 
                         <div class="form-outline mb-4">
                             <label class="form-label" for="email">Email address</label>
